@@ -30,12 +30,11 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .card{
-        width: 588px;
-        height: 308px;
-    }
+  .card {
+    width: 588px;
+    height: 308px;
+  }
 }
-
 
 .card header h3 {
   font-size: 48px;
