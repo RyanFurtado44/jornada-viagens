@@ -18,7 +18,7 @@
 
   --titles-weight: 700;
   --text-weight: 400;
-  --menu-text-weight: 500 menu: 500 footer: 400 cards: 400 e 700;
+  --menu-text-weight: 500;
 }
 
 /* CSS RESET */
@@ -42,6 +42,21 @@ body {
   color: var(--text-primary-color);
 }
 
+section {
+  width: 312px;
+  margin: 0 auto 88px;
+}
+
+section.hero {
+  width: 100%;
+  margin: 0;
+}
+
+.section-title {
+  width: 280px;
+  margin: 0 auto 32px;
+}
+
 .section-title h2 {
   font-size: 28px;
   font-weight: var(--titles-weight);
@@ -58,7 +73,7 @@ body {
 }
 
 .button {
-  width: 200px;
+  min-width: 280px;
   height: 64px;
   color: var(--text-secondary-color);
   font-weight: var(--titles-weight);
@@ -68,15 +83,39 @@ body {
   display: inline-block;
   text-decoration: none;
   line-height: 64px;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .section-title h2 {
     font-size: 32px;
   }
+
+  section {
+    width: 648px;
+  }
+
+  .section-title {
+    width: 100%;
+    margin: 0 auto 32px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  section {
+    width: 900px;
+  }
+
+  .button:hover {
+    background-color: var(--primary-color);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  section {
+    width: 1200px;
+  }
+
   .button:hover {
     background-color: var(--primary-color);
   }
