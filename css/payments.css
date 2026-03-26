@@ -1,0 +1,62 @@
+.payments .content-container .image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  height: 460px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.payments .content-container {
+  display: flex;
+}
+
+.payments .content-container .image-gallery .image.first {
+  background: url(../img/gallery1-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+.payments .content-container .image-gallery .image.second {
+  background: url(../img/gallery2-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+.payments .content-container .image-gallery .image.thirdy {
+  background: url(../img/gallery3-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+.payments .content-container .image-gallery .image.colspan-2 {
+  grid-column: span 2;
+}
+
+@media screen and (min-width: 768px) {
+  .payments .content-container .image-gallery .image.first {
+    background: url(../img/gallery1-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .payments .content-container .image-gallery .image.second {
+    background: url(../img/gallery2-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .payments .content-container .image-gallery .image.thirdy {
+    background: url(../img/gallery3-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .payments .content-container {
+    justify-content: space-between;
+  }
+
+  .payments .content-container .text-gallery {
+    width: 360px;
+  }
+
+  .payments .content-container .image-gallery {
+    width: 790px;
+  }
+}

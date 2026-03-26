@@ -1,8 +1,3 @@
-.destinations {
-  width: 312px;
-  margin: 0 auto;
-}
-
 .destination-items {
   display: flex;
   flex-direction: column;
@@ -26,15 +21,10 @@
 }
 
 .destinations .item header h4 {
-  font-size: 20px;
-  font-weight: var(--titles-weight);
   margin: 24px 0;
 }
 
 .destinations .item p {
-  font-size: 20px;
-  font-weight: var(--text-weight);
-  line-height: 32px;
   margin-bottom: 24px;
 }
 .destinations .button {
