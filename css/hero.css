@@ -1,16 +1,22 @@
-.hero .hero-img, .bottom-hero .hero-img {
+.hero .hero-img,
+.bottom-hero .hero-img {
   height: 400px;
   width: 100%;
 }
 
-.hero .hero-img{
+.hero .hero-img {
   background: url(../img/hero-mobile.jpg) no-repeat;
   background-size: cover;
 }
 
-.bottom-hero .hero-img{
-  background: url(../img/bg-bottom-hero-mobile.png);
+.bottom-hero .hero-img {
+  background: url(../img/bg-bottom-hero-mobile.png) no-repeat;
   background-size: cover;
+}
+
+.bottom-hero {
+  width: 100%;
+  margin: 0;
 }
 
 .hero h2 {
@@ -23,15 +29,15 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero-img {
+  .hero .hero-img {
     height: 620px;
     background: url(../img/hero-tablet.jpg) no-repeat;
     background-size: cover;
   }
 
   .bottom-hero .hero-img {
-    height: 400px;
-    background: url(../img/bg-bottom-hero-mobile.png);
+    height: 800px;
+    background: url(../img/bg-bottom-hero-mobile.png) no-repeat;
     background-size: cover;
   }
 
@@ -42,14 +48,14 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .hero-img {
+  .hero .hero-img {
     background: url(../img/hero-desktop.jpg) no-repeat;
     background-size: cover;
   }
 
-  .bottom-hero .hero-img{
-    height: 600px;
-    background: url(../img/bg-bottom-hero-mobile.png);
+  .bottom-hero .hero-img {
+    height: 900px;
+    background: url(../img/bg-bottom-hero-mobile.png) no-repeat;
     background-size: cover;
   }
 
@@ -58,9 +64,8 @@
   }
 }
 
-
 @media screen and (min-width: 1920px) {
   .hero h2 {
-    padding: 88px 120px;
+    padding: 88px 160px;
   }
 }

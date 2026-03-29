@@ -16,7 +16,7 @@
   --text-primary-color: #222222;
   --text-secondary-color: #ffffff;
 
-  --titles-weight: 700;
+  --title-weight: 700;
   --text-weight: 400;
   --menu-text-weight: 500;
 }
@@ -24,6 +24,7 @@
 /* CSS RESET */
 body,
 img,
+h1,
 p,
 fieldset,
 legend,
@@ -47,23 +48,21 @@ section {
   margin: 0 auto 88px;
 }
 
-section.hero {
+section.hero,
+section.bottom-hero {
   width: 100%;
   margin: 0;
 }
-
 .section-title {
   width: 280px;
   margin: 0 auto 32px;
 }
-
 .section-title h2 {
   font-size: 28px;
-  font-weight: var(--titles-weight);
+  font-weight: var(--title-weight);
   margin: 0;
   text-align: center;
 }
-
 .section-title hr {
   width: 180px;
   height: 4px;
@@ -74,10 +73,9 @@ section.hero {
 
 .content-title {
   font-size: 28px;
-  font-weight: var(--titles-weight);
+  font-weight: var(--title-weight);
   margin: 0 0 24px;
 }
-
 .content-text {
   font-size: 20px;
   font-weight: var(--text-weight);
@@ -88,7 +86,7 @@ section.hero {
   min-width: 280px;
   height: 64px;
   color: var(--text-secondary-color);
-  font-weight: var(--titles-weight);
+  font-weight: var(--title-weight);
   font-size: 20px;
   background-color: var(--secondary-color);
   border-radius: 16px;
@@ -99,17 +97,14 @@ section.hero {
 }
 
 @media screen and (min-width: 768px) {
-  .section-title h2 {
-    font-size: 32px;
-  }
-
   section {
     width: 648px;
   }
-
   .section-title {
     width: 100%;
-    margin: 0 auto 32px;
+  }
+  .section-title h2 {
+    font-size: 32px;
   }
 }
 
@@ -117,7 +112,6 @@ section.hero {
   section {
     width: 900px;
   }
-
   .button:hover {
     background-color: var(--primary-color);
   }
@@ -126,9 +120,5 @@ section.hero {
 @media screen and (min-width: 1440px) {
   section {
     width: 1200px;
-  }
-
-  .button:hover {
-    background-color: var(--primary-color);
   }
 }
