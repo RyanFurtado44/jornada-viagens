@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jornada Viagens, uma agência apaixonada por criar viagens inesquecíveis"
+    />
+
+    <meta name="og:title" content="Jornada Viagens" />
+    <meta
+      name="og:description"
+      content="Jornada Viagens, uma agência apaixonada por criar viagens inesquecíveis"
+    />
+    <meta
+      name="og:image"
+      content="https://ryanfurtado.github.io/jornada-viagens/img/Logo-branco-footer.png"
+    />
+    <meta name="og:type" content="website" />
+    <meta
+      name="og:url"
+      content="https://ryanfurtado.github.io/jornada-viagens"
+    />
+
+    <link rel="icon" href="favico.svg" type="xml/svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/popUp.css">
+
+    <title>Jornada Viagens</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="logo" href="index.html" title="Voltar para a página inicial">
+        <img
+          class="img-mobile"
+          src="img/bussola-jornada-branca.png"
+          alt="Bussola do logo Jornada Viagens na cor branca"
+        />
+        <img
+          class="img-desktop"
+          src="img/bussola-texto-jornada-branca.png"
+          alt="Logo Jornada Viagens na cor branca"
+        />
+      </a>
+      <div class="navigation-menu">
+        <label for="menu">
+          <img src="img/menu.png" alt="menu" />
+        </label>
+        <input type="checkbox" id="menu" hidden />
+       <nav>
+  <ul class="list-links">
+    <li>
+      <a href="index.html" title="Inicio">Inicio</a>
+    </li>
+    <li>
+      <a href="pacotes-de-viagem.html" title="Acessar pacotes de viagem">Pacotes de Viagem</a>
+    </li>
+    <li>
+      <a href="login.html" title="Pagina Login">Login</a>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="travel-packages hero">
+        <div class="hero-img">
+          <div class="hero-content">
+            <h1>Faça login ou cadastro em nosso site!</h1>
+            <hr />
+            <p>Não se preocupe, seus dados estão protegidos, Pode confiar!</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2 class="title-form">Cadastro</h2>
+        <form id="formCadastro" class="form-wrap">
+          <div class="field">
+            <input type="text" name="nome" placeholder="Seu nome" required />
+          </div>
+          <br />
+          <br />
+          <div class="field">
+            <input type="email" name="email" placeholder="Seu Email" required />
+          </div>
+          <br /><br />
+          <div class="field">
+            <input
+              type="password"
+              name="senha"
+              placeholder="Sua Senha"
+              required
+            />
+          </div>
+
+          <input type="submit" class="btn-enviar" value="Entrar!" />
+        </form>
+      </section>
+
+      <section class="form-section">
+        <h2 class="title-form">Login</h2>
+        <form id="meuFormulario" class="form-wrap">
+          <div class="field">
+            <input type="email" name="email" placeholder="Seu Email" required />
+          </div>
+          <br /><br />
+          <div class="field">
+            <input
+              type="password"
+              name="senha"
+              placeholder="Sua Senha"
+              required
+            />
+          </div>
+          <br /><br />
+
+          <input type="submit" class="btn-enviar" value="Entrar!" />
+        </form>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <img
+          src="img/Logo-branco-footer.png"
+          alt="logo completo jornada viagens"
+        />
+        <p>Horário de atendimento: 08h - 20h (Segunda a Sábado)</p>
+        <p>Projeto fictício sem fins comerciais.</p>
+      </div>
+      <div class="footer-social">
+        <p>Acesse nossas redes:</p>
+
+        <a href="#" target="_blank" title="Acesse o Twitter do Jornada viagens">
+          <img src="img/Twitter 1.png" alt="icone do Twitter na cor branca" />
+        </a>
+
+        <a
+          href="#"
+          target="_blank"
+          title="Acesse o Instagram do Jornada Viagens"
+        >
+          <img
+            src="img/Instagram 1.png"
+            alt="icone do instagram na cor branca"
+          />
+        </a>
+
+        <a
+          href="#"
+          target="_blank"
+          title="Acesse o Whatsapp do Jornada Viagens"
+        >
+          <img src="img/Whatsapp 1.png" alt="icone do Whatsapp na cor branca" />
+        </a>
+      </div>
+    </footer>
+    <div id="meuModal" class="modal-background">
+      <div class="modal-conteudo">
+        <h3 id="modalTitulo">Aviso</h3>
+        <p id="modalMensagem">Mensagem aqui...</p>
+        <button id="btnFecharModal" class="btn-modal">Ok</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

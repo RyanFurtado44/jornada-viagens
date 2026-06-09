@@ -1,0 +1,66 @@
+/* ==========================================================================
+   POP-UP ULTRA SIMPLIFICADO - ESTADO INICIAL: INVISÍVEL
+   ========================================================================== */
+
+/* Forçamos o display: none com alta especificidade para que ele nasça invisível 
+   e não seja afetado pelo footer ou pelas outras seções */
+html body .modal-background {
+  display: none !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  z-index: 99999 !important; /* Garante sobreposição total */
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Caixa branca interna do aviso */
+html body .modal-conteudo {
+  background-color: var(--background-primary-color, #ffffff) !important;
+  padding: 32px !important;
+  border-radius: 16px !important;
+  width: 90% !important;
+  max-width: 360px !important;
+  text-align: center !important;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Título */
+.modal-conteudo h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: var(--title-weight, 700);
+  color: var(--text-primary-color, #222222);
+  margin: 0 0 12px 0 !important;
+}
+
+/* Texto interno */
+.modal-conteudo p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: var(--text-weight, 400);
+  color: var(--text-primary-color, #222222);
+  line-height: 24px;
+  margin: 0 0 24px 0 !important;
+}
+
+/* Botão Ok */
+.btn-modal {
+  width: 100% !important;
+  height: 48px !important;
+  color: var(--text-secondary-color, #ffffff) !important;
+  font-weight: var(--title-weight, 700) !important;
+  font-size: 16px !important;
+  background-color: var(--secondary-color, #b81515) !important;
+  border-radius: 12px !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s ease;
+}
+
+.btn-modal:hover {
+  background-color: var(--primary-color, #8f0101) !important;
+}

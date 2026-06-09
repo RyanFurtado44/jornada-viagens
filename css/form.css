@@ -1,0 +1,70 @@
+form {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.title-form {
+  width: 400px; /* Largura necessária */
+  margin: 0 auto; /* Centraliza a caixa na horizontal */
+  display: block;
+}
+
+.form-wrap {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.field {
+  margin-bottom: 24px;
+}
+
+/* Inputs de texto, tel, email */
+.field input {
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  padding: 8px 0;
+  background: transparent;
+  color: #333;
+}
+
+.field input::placeholder {
+  color: #999;
+}
+
+.field input:focus {
+  border-bottom: 2px solid #c0392b;
+}
+
+/* ── Botão input ── */
+.btn-enviar {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+  background-color: #c0392b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 0;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #a93226;
+}
+
+.btn-enviar:active {
+  background-color: #922b21;
+}
