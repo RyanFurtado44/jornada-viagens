@@ -1,3 +1,4 @@
+// Pela minha vida, juro que tentei fazer aquele pop up ser simples, mas não deu 
 const modal = document.getElementById("meuModal");
 const modalTitulo = document.getElementById("modalTitulo");
 const modalMensagem = document.getElementById("modalMensagem");
@@ -5,17 +6,15 @@ const btnFecharModal = document.getElementById("btnFecharModal");
 
 let acaoAoclicarOk = null;
 
-// Altere apenas a função mostrarAviso no seu index.js para ficar assim:
+// Função para abrir o pop-up
+
 function mostrarAviso(titulo, mensagem, acaoSucesso = null) {
   modalTitulo.innerText = titulo;
   modalMensagem.innerText = mensagem;
   acaoAoclicarOk = acaoSucesso;
 
-  // Força o display a virar flex sobrepondo o !important do CSS inicial
   modal.style.setProperty("display", "flex", "important");
-}
-
-// Garanta que o botão de fechar reverta para none !important:
+} //Fecha o pop-up ao clicar no botão
 btnFecharModal.addEventListener("click", function () {
   modal.style.setProperty("display", "none", "important");
   if (acaoAoclicarOk) {
@@ -32,7 +31,7 @@ if (formCadastro) {
     fetch("register.php", {
       method: "POST",
       body: dadosFormulario,
-    })
+    }) // Abre o pop-up de sucesso caso tudo funcione corretamente (Tomara)
       .then((resposta) => resposta.json())
       .then((dados) => {
         if (dados.sucesso) {
@@ -44,7 +43,8 @@ if (formCadastro) {
               window.location.href = "index.html";
             },
           );
-        } else {
+        } else // Se não mostra mensagem de erro ;-;
+        {
           mostrarAviso("Erro", dados.mensagem);
         }
       })
@@ -66,7 +66,10 @@ if (formLogin) {
     })
       .then((resposta) => resposta.json())
       .then((dados) => {
-        if (dados.sucesso) {
+        if (
+          dados.sucesso
+        ) //Abre o pop-up exibindo o nome recuperado do banco (sem nome estranho)
+        {
           mostrarAviso(
             "Bem-vindo(a)!",
             `Olá, ${dados.nome}! Login efetuado com sucesso.`,
@@ -74,7 +77,8 @@ if (formLogin) {
               window.location.href = "index.html";
             },
           );
-        } else {
+        } else //Se não exibe mensagem de erro
+          {
           mostrarAviso("Erro", dados.mensagem);
         }
       })

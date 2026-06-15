@@ -1,5 +1,5 @@
 <?php
-// 1. Informa ao navegador que a resposta será em dados purificados (JSON)
+// Informa ao navegador que a resposta será em dados (JSON)
 header('Content-Type: application/json');
 
 $nome = $_POST["nome"] ?? '';
@@ -12,7 +12,7 @@ $password = "";
 $database = "jornada";
 
 $conn = mysqli_connect($host, $user, $password, $database);
-
+// mesma logica do login
 if (mysqli_connect_error()) {
     echo json_encode([
         "sucesso" => false,

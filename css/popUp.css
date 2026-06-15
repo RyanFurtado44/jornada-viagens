@@ -1,9 +1,4 @@
-/* ==========================================================================
-   POP-UP ULTRA SIMPLIFICADO - ESTADO INICIAL: INVISÍVEL
-   ========================================================================== */
-
-/* Forçamos o display: none com alta especificidade para que ele nasça invisível 
-   e não seja afetado pelo footer ou pelas outras seções */
+/* Essa é uma bagunça necessaria (culpa do pop up) */
 html body .modal-background {
   display: none !important;
   position: fixed !important;
